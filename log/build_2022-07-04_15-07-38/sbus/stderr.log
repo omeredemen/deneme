@@ -1,0 +1,8 @@
+/usr/bin/ld: CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o: in function `sbus::sbus()':
+sbus_node.cpp:(.text._ZN4sbusC2Ev[_ZN4sbusC5Ev]+0x11f): undefined reference to `SBusSerialPort::connectSerialPort()'
+/usr/bin/ld: CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o: in function `sbus::callBack(std::shared_ptr<sensor_msgs::msg::Joy_<std::allocator<void> > >)':
+sbus_node.cpp:(.text._ZN4sbus8callBackESt10shared_ptrIN11sensor_msgs3msg4Joy_ISaIvEEEE[_ZN4sbus8callBackESt10shared_ptrIN11sensor_msgs3msg4Joy_ISaIvEEEE]+0x323): undefined reference to `SBusSerialPort::transmitSerialSBusMessage() const'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:175: sbus_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

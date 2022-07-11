@@ -1,0 +1,4 @@
+source;share/sbus/local_setup.bash
+source;share/sbus/local_setup.dsv
+source;share/sbus/local_setup.sh
+source;share/sbus/local_setup.zsh

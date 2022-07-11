@@ -1,0 +1,137 @@
+[0.000000] (-) TimerEvent: {}
+[0.000361] (sbus) JobQueued: {'identifier': 'sbus', 'dependencies': OrderedDict()}
+[0.001792] (sbus) JobStarted: {'identifier': 'sbus'}
+[0.009128] (sbus) JobProgress: {'identifier': 'sbus', 'progress': 'cmake'}
+[0.009843] (sbus) JobProgress: {'identifier': 'sbus', 'progress': 'build'}
+[0.010804] (sbus) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/omer/Desktop/deneme_ws/build/sbus', '--', '-j8', '-l8'], 'cwd': '/home/omer/Desktop/deneme_ws/build/sbus', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'omer'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/omer'), ('OLDPWD', '/home/omer/Desktop/deneme_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '1208'), ('SYSTEMD_EXEC_PID', '1418'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6197'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'omer'), ('JOURNAL_STREAM', '8:32854'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'omer'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/edemen:@/tmp/.ICE-unix/1381,unix/edemen:/tmp/.ICE-unix/1381'), ('INVOCATION_ID', '3be71654c297477cb007beda18989d12'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0CPYO1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:c7a45cb0-2878-4e7e-8e40-10a4b9f54928'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/omer/Desktop/deneme_ws/build/sbus'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.049065] (sbus) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sbus_node\x1b[0m\n'}
+[0.066438] (sbus) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus.cpp.o\x1b[0m\n'}
+[0.099994] (-) TimerEvent: {}
+[0.200234] (-) TimerEvent: {}
+[0.300517] (-) TimerEvent: {}
+[0.400824] (-) TimerEvent: {}
+[0.501153] (-) TimerEvent: {}
+[0.601498] (-) TimerEvent: {}
+[0.701798] (-) TimerEvent: {}
+[0.802077] (-) TimerEvent: {}
+[0.902353] (-) TimerEvent: {}
+[1.002632] (-) TimerEvent: {}
+[1.102931] (-) TimerEvent: {}
+[1.203227] (-) TimerEvent: {}
+[1.303499] (-) TimerEvent: {}
+[1.403800] (-) TimerEvent: {}
+[1.504084] (-) TimerEvent: {}
+[1.604366] (-) TimerEvent: {}
+[1.704620] (-) TimerEvent: {}
+[1.804897] (-) TimerEvent: {}
+[1.905206] (-) TimerEvent: {}
+[2.005523] (-) TimerEvent: {}
+[2.105832] (-) TimerEvent: {}
+[2.206165] (-) TimerEvent: {}
+[2.306518] (-) TimerEvent: {}
+[2.406805] (-) TimerEvent: {}
+[2.507119] (-) TimerEvent: {}
+[2.607392] (-) TimerEvent: {}
+[2.707670] (-) TimerEvent: {}
+[2.807945] (-) TimerEvent: {}
+[2.908221] (-) TimerEvent: {}
+[3.008510] (-) TimerEvent: {}
+[3.108780] (-) TimerEvent: {}
+[3.209054] (-) TimerEvent: {}
+[3.309387] (-) TimerEvent: {}
+[3.409652] (-) TimerEvent: {}
+[3.510043] (-) TimerEvent: {}
+[3.610350] (-) TimerEvent: {}
+[3.710634] (-) TimerEvent: {}
+[3.810945] (-) TimerEvent: {}
+[3.911214] (-) TimerEvent: {}
+[4.011548] (-) TimerEvent: {}
+[4.111870] (-) TimerEvent: {}
+[4.212308] (-) TimerEvent: {}
+[4.312828] (-) TimerEvent: {}
+[4.413239] (-) TimerEvent: {}
+[4.513659] (-) TimerEvent: {}
+[4.614238] (-) TimerEvent: {}
+[4.714851] (-) TimerEvent: {}
+[4.815421] (-) TimerEvent: {}
+[4.915791] (-) TimerEvent: {}
+[5.016285] (-) TimerEvent: {}
+[5.116530] (-) TimerEvent: {}
+[5.216806] (-) TimerEvent: {}
+[5.317079] (-) TimerEvent: {}
+[5.417365] (-) TimerEvent: {}
+[5.517740] (-) TimerEvent: {}
+[5.618333] (-) TimerEvent: {}
+[5.718652] (-) TimerEvent: {}
+[5.818899] (-) TimerEvent: {}
+[5.919208] (-) TimerEvent: {}
+[6.019587] (-) TimerEvent: {}
+[6.119951] (-) TimerEvent: {}
+[6.220311] (-) TimerEvent: {}
+[6.320553] (-) TimerEvent: {}
+[6.420874] (-) TimerEvent: {}
+[6.521165] (-) TimerEvent: {}
+[6.621407] (-) TimerEvent: {}
+[6.721787] (-) TimerEvent: {}
+[6.822525] (-) TimerEvent: {}
+[6.922969] (-) TimerEvent: {}
+[7.023313] (-) TimerEvent: {}
+[7.123846] (-) TimerEvent: {}
+[7.224930] (-) TimerEvent: {}
+[7.325890] (-) TimerEvent: {}
+[7.426982] (-) TimerEvent: {}
+[7.527933] (-) TimerEvent: {}
+[7.628752] (-) TimerEvent: {}
+[7.729622] (-) TimerEvent: {}
+[7.830370] (-) TimerEvent: {}
+[7.931064] (-) TimerEvent: {}
+[8.031680] (-) TimerEvent: {}
+[8.132251] (-) TimerEvent: {}
+[8.232496] (-) TimerEvent: {}
+[8.332847] (-) TimerEvent: {}
+[8.433132] (-) TimerEvent: {}
+[8.533394] (-) TimerEvent: {}
+[8.633674] (-) TimerEvent: {}
+[8.734015] (-) TimerEvent: {}
+[8.834401] (-) TimerEvent: {}
+[8.934675] (-) TimerEvent: {}
+[9.034998] (-) TimerEvent: {}
+[9.135374] (-) TimerEvent: {}
+[9.235714] (-) TimerEvent: {}
+[9.336063] (-) TimerEvent: {}
+[9.436391] (-) TimerEvent: {}
+[9.536751] (-) TimerEvent: {}
+[9.637103] (-) TimerEvent: {}
+[9.658913] (sbus) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable sbus_node\x1b[0m\n'}
+[9.737258] (-) TimerEvent: {}
+[9.837558] (-) TimerEvent: {}
+[9.937876] (-) TimerEvent: {}
+[10.038149] (-) TimerEvent: {}
+[10.138433] (-) TimerEvent: {}
+[10.219269] (sbus) StdoutLine: {'line': b'[100%] Built target sbus_node\n'}
+[10.230452] (sbus) CommandEnded: {'returncode': 0}
+[10.238560] (-) TimerEvent: {}
+[10.255137] (sbus) JobProgress: {'identifier': 'sbus', 'progress': 'install'}
+[10.262615] (sbus) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/omer/Desktop/deneme_ws/build/sbus'], 'cwd': '/home/omer/Desktop/deneme_ws/build/sbus', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'omer'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/omer'), ('OLDPWD', '/home/omer/Desktop/deneme_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '1208'), ('SYSTEMD_EXEC_PID', '1418'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6197'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'omer'), ('JOURNAL_STREAM', '8:32854'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'omer'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/edemen:@/tmp/.ICE-unix/1381,unix/edemen:/tmp/.ICE-unix/1381'), ('INVOCATION_ID', '3be71654c297477cb007beda18989d12'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0CPYO1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:c7a45cb0-2878-4e7e-8e40-10a4b9f54928'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/omer/Desktop/deneme_ws/build/sbus'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.275605] (sbus) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.276071] (sbus) StdoutLine: {'line': b'-- Installing: /home/omer/Desktop/deneme_ws/install/sbus/lib/sbus/sbus_node\n'}
+[10.286392] (sbus) StdoutLine: {'line': b'-- Set runtime path of "/home/omer/Desktop/deneme_ws/install/sbus/lib/sbus/sbus_node" to ""\n'}
+[10.287055] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/ament_index/resource_index/package_run_dependencies/sbus\n'}
+[10.287358] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/ament_index/resource_index/parent_prefix_path/sbus\n'}
+[10.287527] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/ament_prefix_path.sh\n'}
+[10.287813] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/ament_prefix_path.dsv\n'}
+[10.287997] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/path.sh\n'}
+[10.288148] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/path.dsv\n'}
+[10.288295] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.bash\n'}
+[10.288461] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.sh\n'}
+[10.288595] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.zsh\n'}
+[10.288716] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.dsv\n'}
+[10.288835] (sbus) StdoutLine: {'line': b'-- Installing: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/package.dsv\n'}
+[10.288954] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/ament_index/resource_index/packages/sbus\n'}
+[10.289095] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/cmake/sbusConfig.cmake\n'}
+[10.289225] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/cmake/sbusConfig-version.cmake\n'}
+[10.289343] (sbus) StdoutLine: {'line': b'-- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/package.xml\n'}
+[10.290176] (sbus) CommandEnded: {'returncode': 0}
+[10.339025] (-) TimerEvent: {}
+[10.344224] (sbus) JobEnded: {'identifier': 'sbus', 'rc': 0}
+[10.344893] (-) EventReactorShutdown: {}

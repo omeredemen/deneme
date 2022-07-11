@@ -1,0 +1,20 @@
+[0.492s] Invoking command in '/home/omer/Desktop/deneme_ws/build/sbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[0.493s] [35m[1mConsolidate compiler generated dependencies of target sbus_node[0m
+[0.493s] [ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/deneme.cpp.o[0m
+[0.683s] In file included from [01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/deneme.cpp:1[m[K:
+[0.684s] [01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus/sbus.h:28:5:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[KkSbusFrameLength_[m[K’ declared ‘[01m[Kconstexpr[m[K’
+[0.684s]    28 |     [01;31m[Kconstexpr[m[K int kSbusFrameLength_ = 25;
+[0.684s]       |     [01;31m[K^~~~~~~~~[m[K
+[0.684s] [01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus/sbus.h:29:5:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[KkSbusHeaderByte_[m[K’ declared ‘[01m[Kconstexpr[m[K’
+[0.684s]    29 |     [01;31m[Kconstexpr[m[K uint8_t kSbusHeaderByte_ = 0x0F;
+[0.684s]       |     [01;31m[K^~~~~~~~~[m[K
+[0.684s] [01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus/sbus.h:30:5:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[KkSbusFooterByte_[m[K’ declared ‘[01m[Kconstexpr[m[K’
+[0.684s]    30 |     [01;31m[Kconstexpr[m[K uint8_t kSbusFooterByte_ = 0x00;
+[0.684s]       |     [01;31m[K^~~~~~~~~[m[K
+[0.684s] [01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus/sbus.h:31:5:[m[K [01;31m[Kerror: [m[Knon-static data member ‘[01m[KkPollTimeoutMilliSeconds_[m[K’ declared ‘[01m[Kconstexpr[m[K’
+[0.684s]    31 |     [01;31m[Kconstexpr[m[K int kPollTimeoutMilliSeconds_ = 500;
+[0.684s]       |     [01;31m[K^~~~~~~~~[m[K
+[5.271s] gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:76: CMakeFiles/sbus_node.dir/src/deneme.cpp.o] Error 1
+[5.272s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
+[5.272s] gmake: *** [Makefile:146: all] Error 2
+[5.274s] Invoked command in '/home/omer/Desktop/deneme_ws/build/sbus' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8

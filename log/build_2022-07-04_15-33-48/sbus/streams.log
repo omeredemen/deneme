@@ -1,0 +1,39 @@
+[0.252s] Invoking command in '/home/omer/Desktop/deneme_ws/build/sbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[3.499s] -- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.802s] -- Found rclcpp: 16.0.1 (/opt/ros/humble/share/rclcpp/cmake)
+[7.599s] -- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.613s] -- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.635s] -- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.747s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.869s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.081s] -- Found rmw_implementation_cmake: 6.1.0 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.130s] -- Found rmw_fastrtps_cpp: 6.2.1 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.652s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.898s] -- Found sensor_msgs: 4.2.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[10.543s] -- Configuring done
+[10.870s] -- Generating done
+[10.876s] -- Build files have been written to: /home/omer/Desktop/deneme_ws/build/sbus
+[10.952s] [ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus.cpp.o[0m
+[25.594s] [100%] [32m[1mLinking CXX executable sbus_node[0m
+[27.156s] [100%] Built target sbus_node
+[30.970s] Invoked command in '/home/omer/Desktop/deneme_ws/build/sbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[31.138s] Invoking command in '/home/omer/Desktop/deneme_ws/build/sbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/omer/Desktop/deneme_ws/build/sbus
+[31.143s] -- Install configuration: ""
+[31.143s] -- Installing: /home/omer/Desktop/deneme_ws/install/sbus/lib/sbus/sbus_node
+[31.167s] -- Set runtime path of "/home/omer/Desktop/deneme_ws/install/sbus/lib/sbus/sbus_node" to ""
+[31.168s] -- Installing: /home/omer/Desktop/deneme_ws/install/sbus/share/ament_index/resource_index/package_run_dependencies/sbus
+[31.209s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/ament_index/resource_index/parent_prefix_path/sbus
+[31.209s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/ament_prefix_path.sh
+[31.209s] -- Installing: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/ament_prefix_path.dsv
+[31.356s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/path.sh
+[31.357s] -- Installing: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/path.dsv
+[31.358s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.bash
+[31.359s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.sh
+[31.360s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.zsh
+[31.360s] -- Installing: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.dsv
+[31.361s] -- Installing: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/package.dsv
+[31.362s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/ament_index/resource_index/packages/sbus
+[31.362s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/cmake/sbusConfig.cmake
+[31.363s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/cmake/sbusConfig-version.cmake
+[31.363s] -- Installing: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/package.xml
+[31.656s] Invoked command in '/home/omer/Desktop/deneme_ws/build/sbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/omer/Desktop/deneme_ws/build/sbus

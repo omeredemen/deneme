@@ -1,0 +1,30 @@
+[0.013s] Invoking command in '/home/omer/Desktop/deneme_ws/build/sbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[0.046s] [35m[1mConsolidate compiler generated dependencies of target sbus_node[0m
+[0.063s] [ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus.cpp.o[0m
+[2.303s] [01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:[m[K In member function ‘[01m[Kvoid sbus_node::callBack(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.303s] [01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:218:41:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kstd::array<unsigned char, 16>::value_type[m[K’ {aka ‘[01m[Kunsigned char[m[K’} changes value from ‘[01m[K1000[m[K’ to ‘[01m[K232[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+[2.303s]   218 |                 sbus.channels[j] = [01;35m[K1000 + ((1000)/(2)) * (-1+1)[m[K;
+[2.304s]       |                                    [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.253s] [100%] [32m[1mLinking CXX executable sbus_node[0m
+[8.667s] [100%] Built target sbus_node
+[8.677s] Invoked command in '/home/omer/Desktop/deneme_ws/build/sbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[8.700s] Invoking command in '/home/omer/Desktop/deneme_ws/build/sbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/omer/Desktop/deneme_ws/build/sbus
+[8.706s] -- Install configuration: ""
+[8.706s] -- Installing: /home/omer/Desktop/deneme_ws/install/sbus/lib/sbus/sbus_node
+[8.711s] -- Set runtime path of "/home/omer/Desktop/deneme_ws/install/sbus/lib/sbus/sbus_node" to ""
+[8.711s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/ament_index/resource_index/package_run_dependencies/sbus
+[8.711s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/ament_index/resource_index/parent_prefix_path/sbus
+[8.711s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/ament_prefix_path.sh
+[8.711s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/ament_prefix_path.dsv
+[8.711s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/path.sh
+[8.711s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/environment/path.dsv
+[8.711s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.bash
+[8.711s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.sh
+[8.711s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.zsh
+[8.711s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/local_setup.dsv
+[8.711s] -- Installing: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/package.dsv
+[8.712s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/ament_index/resource_index/packages/sbus
+[8.712s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/cmake/sbusConfig.cmake
+[8.712s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/cmake/sbusConfig-version.cmake
+[8.712s] -- Up-to-date: /home/omer/Desktop/deneme_ws/install/sbus/share/sbus/package.xml
+[8.713s] Invoked command in '/home/omer/Desktop/deneme_ws/build/sbus' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/omer/Desktop/deneme_ws/build/sbus

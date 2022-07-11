@@ -1,0 +1,120 @@
+[8.227s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[8.228s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1676590940>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1676f22830>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1676f22830>>)
+[9.507s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[9.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[9.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[9.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[9.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[9.508s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[9.508s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/omer/Desktop/deneme_ws'
+[9.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[9.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[9.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[9.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[9.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[9.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[9.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[9.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[9.511s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[9.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[9.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[9.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[9.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[9.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[9.650s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[9.650s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[9.650s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[9.650s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[9.650s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[9.651s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[9.651s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[9.651s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[9.651s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[9.651s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[9.652s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[9.652s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[9.652s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[9.652s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[9.652s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[9.652s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[9.652s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[9.652s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[9.652s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[9.653s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[9.653s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[9.653s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[9.653s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[9.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/sbus) by extensions ['ignore', 'ignore_ament_install']
+[9.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/sbus) by extension 'ignore'
+[9.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/sbus) by extension 'ignore_ament_install'
+[9.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/sbus) by extensions ['colcon_pkg']
+[9.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/sbus) by extension 'colcon_pkg'
+[9.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/sbus) by extensions ['colcon_meta']
+[9.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/sbus) by extension 'colcon_meta'
+[9.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/sbus) by extensions ['ros']
+[9.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/sbus) by extension 'ros'
+[9.719s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sbus' with type 'ros.ament_cmake' and name 'sbus'
+[9.720s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[9.720s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[9.720s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[9.720s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[9.720s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[10.038s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[10.038s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[10.065s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[10.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[10.240s] Level 5:colcon.colcon_core.verb:set package 'sbus' build argument 'cmake_args' from command line to 'None'
+[10.240s] Level 5:colcon.colcon_core.verb:set package 'sbus' build argument 'cmake_target' from command line to 'None'
+[10.240s] Level 5:colcon.colcon_core.verb:set package 'sbus' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[10.240s] Level 5:colcon.colcon_core.verb:set package 'sbus' build argument 'cmake_clean_cache' from command line to 'False'
+[10.240s] Level 5:colcon.colcon_core.verb:set package 'sbus' build argument 'cmake_clean_first' from command line to 'False'
+[10.240s] Level 5:colcon.colcon_core.verb:set package 'sbus' build argument 'cmake_force_configure' from command line to 'False'
+[10.240s] Level 5:colcon.colcon_core.verb:set package 'sbus' build argument 'ament_cmake_args' from command line to 'None'
+[10.240s] Level 5:colcon.colcon_core.verb:set package 'sbus' build argument 'catkin_cmake_args' from command line to 'None'
+[10.240s] Level 5:colcon.colcon_core.verb:set package 'sbus' build argument 'catkin_skip_building_tests' from command line to 'False'
+[10.241s] DEBUG:colcon.colcon_core.verb:Building package 'sbus' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/omer/Desktop/deneme_ws/build/sbus', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/omer/Desktop/deneme_ws/install/sbus', 'merge_install': False, 'path': '/home/omer/Desktop/deneme_ws/src/sbus', 'symlink_install': False, 'test_result_base': None}
+[10.242s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[10.250s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[10.250s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/omer/Desktop/deneme_ws/src/sbus' with build type 'ament_cmake'
+[10.250s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/omer/Desktop/deneme_ws/src/sbus'
+[10.367s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[10.368s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.369s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/omer/Desktop/deneme_ws/build/sbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[26.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/omer/Desktop/deneme_ws/build/sbus' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[27.446s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sbus)
+[28.007s] Level 1:colcon.colcon_core.environment:checking '/home/omer/Desktop/deneme_ws/install/sbus' for CMake module files
+[28.129s] Level 1:colcon.colcon_core.environment:checking '/home/omer/Desktop/deneme_ws/install/sbus' for CMake config files
+[28.130s] Level 1:colcon.colcon_core.shell:create_environment_hook('sbus', 'cmake_prefix_path')
+[28.136s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/omer/Desktop/deneme_ws/install/sbus/share/sbus/hook/cmake_prefix_path.ps1'
+[28.290s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/omer/Desktop/deneme_ws/install/sbus/share/sbus/hook/cmake_prefix_path.dsv'
+[28.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/omer/Desktop/deneme_ws/install/sbus/share/sbus/hook/cmake_prefix_path.sh'
+[28.344s] Level 1:colcon.colcon_core.environment:checking '/home/omer/Desktop/deneme_ws/install/sbus/lib'
+[28.344s] Level 1:colcon.colcon_core.environment:checking '/home/omer/Desktop/deneme_ws/install/sbus/bin'
+[28.345s] Level 1:colcon.colcon_core.environment:checking '/home/omer/Desktop/deneme_ws/install/sbus/lib/pkgconfig/sbus.pc'
+[28.346s] Level 1:colcon.colcon_core.environment:checking '/home/omer/Desktop/deneme_ws/install/sbus/lib/python3.10/site-packages'
+[28.347s] Level 1:colcon.colcon_core.environment:checking '/home/omer/Desktop/deneme_ws/install/sbus/bin'
+[28.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/omer/Desktop/deneme_ws/install/sbus/share/sbus/package.ps1'
+[28.384s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/omer/Desktop/deneme_ws/install/sbus/share/sbus/package.dsv'
+[28.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/omer/Desktop/deneme_ws/install/sbus/share/sbus/package.sh'
+[28.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/omer/Desktop/deneme_ws/install/sbus/share/sbus/package.bash'
+[28.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/omer/Desktop/deneme_ws/install/sbus/share/sbus/package.zsh'
+[28.533s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/omer/Desktop/deneme_ws/install/sbus/share/colcon-core/packages/sbus)
+[28.590s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[28.591s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[28.592s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[28.592s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[29.349s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[29.350s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[29.350s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[30.182s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[30.188s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/omer/Desktop/deneme_ws/install/local_setup.ps1'
+[30.215s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/omer/Desktop/deneme_ws/install/_local_setup_util_ps1.py'
+[30.274s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/omer/Desktop/deneme_ws/install/setup.ps1'
+[30.278s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/omer/Desktop/deneme_ws/install/local_setup.sh'
+[30.280s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/omer/Desktop/deneme_ws/install/_local_setup_util_sh.py'
+[30.282s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/omer/Desktop/deneme_ws/install/setup.sh'
+[30.286s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/omer/Desktop/deneme_ws/install/local_setup.bash'
+[30.397s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/omer/Desktop/deneme_ws/install/setup.bash'
+[30.411s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/omer/Desktop/deneme_ws/install/local_setup.zsh'
+[30.433s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/omer/Desktop/deneme_ws/install/setup.zsh'

@@ -1,0 +1,28 @@
+[0.088s] Invoking command in '/home/omer/Desktop/deneme_ws/build/sbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[0.576s] -- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.334s] -- Found rclcpp: 16.0.1 (/opt/ros/humble/share/rclcpp/cmake)
+[3.075s] -- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.114s] -- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.182s] -- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.266s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.361s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.502s] -- Found rmw_implementation_cmake: 6.1.0 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.529s] -- Found rmw_fastrtps_cpp: 6.2.1 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.105s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.141s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.183s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.475s] -- Found sensor_msgs: 4.2.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[4.999s] -- Configuring done
+[5.198s] -- Generating done
+[5.203s] -- Build files have been written to: /home/omer/Desktop/deneme_ws/build/sbus
+[5.255s] [ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o[0m
+[18.798s] [100%] [32m[1mLinking CXX executable sbus_node[0m
+[26.589s] /usr/bin/ld: CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o: in function `sbus::sbus()':
+[26.589s] sbus_node.cpp:(.text._ZN4sbusC2Ev[_ZN4sbusC5Ev]+0x11f): undefined reference to `SBusSerialPort::connectSerialPort()'
+[26.589s] /usr/bin/ld: CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o: in function `sbus::callBack(std::shared_ptr<sensor_msgs::msg::Joy_<std::allocator<void> > >)':
+[26.589s] sbus_node.cpp:(.text._ZN4sbus8callBackESt10shared_ptrIN11sensor_msgs3msg4Joy_ISaIvEEEE[_ZN4sbus8callBackESt10shared_ptrIN11sensor_msgs3msg4Joy_ISaIvEEEE]+0x323): undefined reference to `SBusSerialPort::transmitSerialSBusMessage() const'
+[26.631s] collect2: error: ld returned 1 exit status
+[26.633s] gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:175: sbus_node] Error 1
+[26.633s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
+[26.633s] gmake: *** [Makefile:146: all] Error 2
+[26.655s] Invoked command in '/home/omer/Desktop/deneme_ws/build/sbus' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8

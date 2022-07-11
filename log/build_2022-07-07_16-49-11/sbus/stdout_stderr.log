@@ -1,0 +1,34 @@
+[35m[1mConsolidate compiler generated dependencies of target sbus_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus.cpp.o[0m
+[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:[m[K In member function ‘[01m[Kvoid sbus_node::callBack(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:190:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ has not been declared
+  190 |         auto start = [01;31m[Kchrono[m[K::steady_clock::Now();
+      |                      [01;31m[K^~~~~~[m[K
+[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:219:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ has not been declared
+  219 |         auto end = [01;31m[Kchrono[m[K::steady_clock::Now();
+      |                    [01;31m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:1[m[K:
+[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:221:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ has not been declared
+  221 |         RCLCPP_INFO(this->get_logger(),"Elapsed time in %d µs", [01;31m[Kchrono[m[K::duration_cast<chrono::microseconds>(end - start).count())
+      |                                                                 [01;31m[K^~~~~~[m[K
+[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:221:87:[m[K [01;31m[Kerror: [m[K‘[01m[Kchrono[m[K’ has not been declared
+  221 |   RCLCPP_INFO(this->get_logger(),"Elapsed time in %d µs", chrono::duration_cast<[01;31m[Kchrono[m[K::microseconds>(end - start).count())
+      |                                                                                 [01;31m[K^~~~~~[m[K
+
+[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:222:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+  222 |     [01;31m[K}[m[K
+      |     [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:76: CMakeFiles/sbus_node.dir/src/sbus.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

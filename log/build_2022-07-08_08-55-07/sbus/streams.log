@@ -1,0 +1,13 @@
+[0.012s] Invoking command in '/home/omer/Desktop/deneme_ws/build/sbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target sbus_node[0m
+[0.060s] [ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/deneme.cpp.o[0m
+[8.287s] [100%] [32m[1mLinking CXX executable sbus_node[0m
+[8.642s] /usr/bin/ld: CMakeFiles/sbus_node.dir/src/deneme.cpp.o: in function `main':
+[8.642s] deneme.cpp:(.text+0xa0): undefined reference to `SBUS::SBusSerialPort::connectSerialPort()'
+[8.643s] /usr/bin/ld: CMakeFiles/sbus_node.dir/src/deneme.cpp.o: in function `sbus_node::callBack(std::shared_ptr<sensor_msgs::msg::Joy_<std::allocator<void> > >)':
+[8.643s] deneme.cpp:(.text._ZN9sbus_node8callBackESt10shared_ptrIN11sensor_msgs3msg4Joy_ISaIvEEEE[_ZN9sbus_node8callBackESt10shared_ptrIN11sensor_msgs3msg4Joy_ISaIvEEEE]+0x2aa): undefined reference to `SBUS::SBusSerialPort::transmitSerialSBusMessage()'
+[8.690s] collect2: error: ld returned 1 exit status
+[8.691s] gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:175: sbus_node] Error 1
+[8.691s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
+[8.691s] gmake: *** [Makefile:146: all] Error 2
+[8.693s] Invoked command in '/home/omer/Desktop/deneme_ws/build/sbus' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8

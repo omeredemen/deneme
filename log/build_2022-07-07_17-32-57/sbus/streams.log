@@ -1,0 +1,10 @@
+[0.013s] Invoking command in '/home/omer/Desktop/deneme_ws/build/sbus': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[0.055s] [ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus.cpp.o[0m
+[0.061s] [01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ksbus/sbus.h: No such file or directory
+[0.061s]     1 | #include [01;31m[K"sbus/sbus.h"[m[K
+[0.062s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[0.062s] compilation terminated.
+[0.062s] gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:76: CMakeFiles/sbus_node.dir/src/sbus.cpp.o] Error 1
+[0.062s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
+[0.063s] gmake: *** [Makefile:146: all] Error 2
+[0.064s] Invoked command in '/home/omer/Desktop/deneme_ws/build/sbus' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8

@@ -1,0 +1,10 @@
+/home/omer/Desktop/deneme_ws/build/sbus/CMakeFiles/uninstall.dir
+/home/omer/Desktop/deneme_ws/build/sbus/CMakeFiles/sbus_uninstall.dir
+/home/omer/Desktop/deneme_ws/build/sbus/CMakeFiles/sbus_node.dir
+/home/omer/Desktop/deneme_ws/build/sbus/CMakeFiles/test.dir
+/home/omer/Desktop/deneme_ws/build/sbus/CMakeFiles/edit_cache.dir
+/home/omer/Desktop/deneme_ws/build/sbus/CMakeFiles/rebuild_cache.dir
+/home/omer/Desktop/deneme_ws/build/sbus/CMakeFiles/list_install_components.dir
+/home/omer/Desktop/deneme_ws/build/sbus/CMakeFiles/install.dir
+/home/omer/Desktop/deneme_ws/build/sbus/CMakeFiles/install/local.dir
+/home/omer/Desktop/deneme_ws/build/sbus/CMakeFiles/install/strip.dir
