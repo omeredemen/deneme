@@ -1,0 +1,7 @@
+[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:[m[K In member function ‘[01m[Kint* SBUS::SBusSerialPort::transmitSerialSBusMessage(int*) const[m[K’:
+[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:176:16:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kuint8_t*[m[K’ {aka ‘[01m[Kunsigned char*[m[K’} to ‘[01m[Kint*[m[K’ in return
+  176 |         return [01;31m[Kbuffer[m[K;
+      |                [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:76: CMakeFiles/sbus_node.dir/src/sbus.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

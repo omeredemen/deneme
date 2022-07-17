@@ -11,13 +11,13 @@ namespace SBUS{
         serial_port_fd_ = open("/dev/ttyUSB0", O_RDWR | O_NOCTTY);
   
         if (serial_port_fd_ == -1) {
-            close(serial_port_fd_);
+            disconnectSerialPort();
             printf("Serial Port Couldn't Open");
             return false;
         }
         
         if (!configureSerialPortForSBus()) {
-            close(serial_port_fd_);
+            disconnectSerialPort();
             printf("Serial Port Couldn't Configure");
             return false;
         } 
@@ -93,8 +93,8 @@ namespace SBUS{
     }
 
 
-    void SBusSerialPort::transmitSerialSBusMessage() const {
-        uint8_t buffer[kSbusFrameLength_];
+    int* SBusSerialPort::transmitSerialSBusMessage(int channels[16]) const {
+        static uint8_t buffer[kSbusFrameLength_];
 
         // SBUS header
         buffer[0] = kSbusHeaderByte_;
@@ -102,39 +102,39 @@ namespace SBUS{
         // 16 channels of 11 bit data
         buffer[1] = (uint8_t)((channels[0] & 0x07FF));
         buffer[2] = (uint8_t)((channels[0] & 0x07FF) >> 8 |
-                        (channels[1] & 0x07FF) << 3);
+                              (channels[1] & 0x07FF) << 3);
         buffer[3] = (uint8_t)((channels[1] & 0x07FF) >> 5 |
-                        (channels[2] & 0x07FF) << 6);
+                              (channels[2] & 0x07FF) << 6);
         buffer[4] = (uint8_t)((channels[2] & 0x07FF) >> 2);
         buffer[5] = (uint8_t)((channels[2] & 0x07FF) >> 10 |
-                        (channels[3] & 0x07FF) << 1);
+                              (channels[3] & 0x07FF) << 1);
         buffer[6] = (uint8_t)((channels[3] & 0x07FF) >> 7 |
-                        (channels[4] & 0x07FF) << 4);
+                              (channels[4] & 0x07FF) << 4);
         buffer[7] = (uint8_t)((channels[4] & 0x07FF) >> 4 |
-                        (channels[5] & 0x07FF) << 7);
+                              (channels[5] & 0x07FF) << 7);
         buffer[8] = (uint8_t)((channels[5] & 0x07FF) >> 1);
         buffer[9] = (uint8_t)((channels[5] & 0x07FF) >> 9 |
-                        (channels[6] & 0x07FF) << 2);
+                              (channels[6] & 0x07FF) << 2);
         buffer[10] = (uint8_t)((channels[6] & 0x07FF) >> 6 |
-                         (channels[7] & 0x07FF) << 5);
+                               (channels[7] & 0x07FF) << 5);
         buffer[11] = (uint8_t)((channels[7] & 0x07FF) >> 3);
         buffer[12] = (uint8_t)((channels[8] & 0x07FF));
         buffer[13] = (uint8_t)((channels[8] & 0x07FF) >> 8 |
-                         (channels[9] & 0x07FF) << 3);
+                               (channels[9] & 0x07FF) << 3);
         buffer[14] = (uint8_t)((channels[9] & 0x07FF) >> 5 |
-                         (channels[10] & 0x07FF) << 6);
+                               (channels[10] & 0x07FF) << 6);
         buffer[15] = (uint8_t)((channels[10] & 0x07FF) >> 2);
         buffer[16] = (uint8_t)((channels[10] & 0x07FF) >> 10 |
-                         (channels[11] & 0x07FF) << 1);
+                               (channels[11] & 0x07FF) << 1);
         buffer[17] = (uint8_t)((channels[11] & 0x07FF) >> 7 |
-                         (channels[12] & 0x07FF) << 4);
+                               (channels[12] & 0x07FF) << 4);
         buffer[18] = (uint8_t)((channels[12] & 0x07FF) >> 4 |
-                         (channels[13] & 0x07FF) << 7);
+                               (channels[13] & 0x07FF) << 7);
         buffer[19] = (uint8_t)((channels[13] & 0x07FF) >> 1);
         buffer[20] = (uint8_t)((channels[13] & 0x07FF) >> 9 |
-                         (channels[14] & 0x07FF) << 2);
+                               (channels[14] & 0x07FF) << 2);
         buffer[21] = (uint8_t)((channels[14] & 0x07FF) >> 6 |
-                         (channels[15] & 0x07FF) << 5);
+                               (channels[15] & 0x07FF) << 5);
         buffer[22] = (uint8_t)((channels[15] & 0x07FF) >> 3);
 
         // SBUS flags
@@ -147,7 +147,7 @@ namespace SBUS{
         // bit5 = n/a
         // bit6 = n/a
         // bit7 = n/a
-        buffer[23] = 0x08;
+        buffer[23] = 0x00;
         /*if (digital_channel_1) {
             buffer[23] |= 0x01;
         }
@@ -173,6 +173,7 @@ namespace SBUS{
         else{
             printf("Wrote %d bytes \n", written);
         }
+        return channels;
     }
 }
 
@@ -184,62 +185,62 @@ public:
     sbus_node() : Node("sbus_node") 
     {
         pub_ = this->create_subscription<sensor_msgs::msg::Joy>("joy", 10,
-        std::bind(&sbus_node::callBack,this,std::placeholders::_1));
+        std::bind(&sbus_node::getJoyMsg,this,std::placeholders::_1));
+
+        timer_ = this->create_wall_timer(std::chrono::milliseconds(1000/freq),
+        std::bind(&sbus_node::sendSbusMsg, this));
     }
      
 private:
-    void callBack(const sensor_msgs::msg::Joy::SharedPtr joy_msg){
-        for(int i = 0; i<SIZE; i++){
-            if(i<8){    
-                new_x[i] = joy_msg->axes[i]; //axes
-            }
-            else{
-                new_x[i] = joy_msg->buttons[i-8]; //buttons
-            }
-        }
+    void getJoyMsg(const sensor_msgs::msg::Joy::SharedPtr joy_msg){
+        
+        x[0] = joy_msg->axes[0];  //Roll
+        x[1] = joy_msg->axes[1];  //Pitch
+        x[2] = -joy_msg->axes[2]; //Throttle //This axis is -1 by default
+        x[3] = joy_msg->axes[3];  //Yaw
+        x[4] = joy_msg->axes[4]; 
+        x[5] = -joy_msg->axes[5]; //This axis is -1 by default
+        x[6] = joy_msg->axes[6];
+        x[7] = joy_msg->axes[7];
+
+        x[8] = joy_msg->buttons[0];
+        x[9] = joy_msg->buttons[1];
+        x[10] = joy_msg->buttons[2];
+        x[11] = joy_msg->buttons[3];
+        x[12] = joy_msg->buttons[4];
+        x[13] = joy_msg->buttons[5];
+        x[14] = joy_msg->buttons[6];
+        x[15] = joy_msg->buttons[7];
         
         //Linear Interpolation  y = y0 + ((y1-y0)/(x1-x0)) * (x - x0);
         for(int j = 0; j<SIZE; j++){
             if(j<8){
-                new_x[j] = min_sbus + ((max_sbus-min_sbus)/(max_axes-min_axes)) * (x[j]-min_axes);
+                x[j] = min_sbus + ((max_sbus-min_sbus)/(max_axes-min_axes)) * (x[j]-min_axes);
             }
             else{
-                new_x[j] = min_sbus +((max_sbus-min_sbus)/(max_button-min_button)) * (x[j]-min_button);
+                x[j] = min_sbus +((max_sbus-min_sbus)/(max_button-min_button)) * (x[j]-min_button);
             }
+            y[j] = int(x[j]);
         }
+    }
 
-        for(int i = 0; i< SIZE; i++){
-            if(new_x[i] == x[i]){
-                equal = true;
-            }
-            else{
-                break;
-            }
-        }
-        
-        for(int i = 0; i<SIZE; i++){
-            if(equal){
-                sbus.channels[i] = new_x[i];
-            }
-            else{
-                sbus.channels[i] = x[i];
-            }
-        }
-        
-        sbus.transmitSerialSBusMessage();
-        
+    void sendSbusMsg(){
+        int* p;
+        p = sbus.transmitSerialSBusMessage(y);
         for(int i =0; i<16; i++){
-            RCLCPP_INFO(this->get_logger()," sbus_.channels[%d] = %d", i, sbus.channels[i]);
-            x[i] = new_x[i];
+            RCLCPP_INFO(this->get_logger()," channels[%d] = %d", i, *(p+i));
         }
     }
     
     rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr pub_;
+    rclcpp::TimerBase::SharedPtr timer_;
 
+    int freq = 125;
     float x[16];
-    float new_x[16]; 
-    bool equal;
-    
+    int y[16] = {900, 900, 900, 900, 
+                 900, 900, 900, 900, 
+                 900, 900, 900, 900, 
+                 900, 900, 900, 900};     
 
     //interpolasyon
     bool min_button = 0;
@@ -248,13 +249,18 @@ private:
     int min_axes = -1;
     int max_axes =  1;
 
-    int min_sbus = 1000;
-    int max_sbus = 2000;
+    int min_sbus = 192;
+    int max_sbus = 1792;
 
 };
      
 int main(int argc, char **argv)
 {
+    if (!sbus.connectSerialPort())
+    {
+        return 0;
+    }
+    
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<sbus_node>());
     rclcpp::shutdown();

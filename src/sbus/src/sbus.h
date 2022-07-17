@@ -18,8 +18,8 @@ namespace SBUS{
 
 class SBusSerialPort {
 public:
-
-   void transmitSerialSBusMessage() const;
+   bool connectSerialPort();
+   int* transmitSerialSBusMessage(int channels[16]) const;
    int channels[16];
 
 private:
@@ -37,7 +37,7 @@ private:
    bool failsafe;
     
    int serial_port_fd_;
-   bool connectSerialPort();
+
    void disconnectSerialPort();
    bool configureSerialPortForSBus() const;
    
