@@ -1,0 +1,11 @@
+[0.022s] Invoking command in '/home/omer/Desktop/deneme_ws/build/sbus': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[0.263s] [35m[1mConsolidate compiler generated dependencies of target sbus_node[0m
+[0.291s] [ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus.cpp.o[0m
+[0.681s] [100%] [32m[1mLinking CXX executable sbus_node[0m
+[0.790s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.790s] (.text+0x1b): undefined reference to `main'
+[0.792s] collect2: error: ld returned 1 exit status
+[0.793s] gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:175: sbus_node] Error 1
+[0.793s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
+[0.793s] gmake: *** [Makefile:146: all] Error 2
+[0.795s] Invoked command in '/home/omer/Desktop/deneme_ws/build/sbus' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8

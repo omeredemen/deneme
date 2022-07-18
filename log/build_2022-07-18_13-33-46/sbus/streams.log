@@ -1,0 +1,11 @@
+[0.030s] Invoking command in '/home/omer/Desktop/deneme_ws/build/sbus': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8
+[0.080s] [35m[1mConsolidate compiler generated dependencies of target sbus_node[0m
+[0.104s] [ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus.cpp.o[0m
+[15.827s] [100%] [32m[1mLinking CXX executable sbus_node[0m
+[16.623s] /usr/bin/ld: CMakeFiles/sbus_node.dir/src/sbus.cpp.o: in function `__static_initialization_and_destruction_0(int, int)':
+[16.623s] sbus.cpp:(.text+0x859): undefined reference to `SBUS::SBusSerialPort::SBusSerialPort()'
+[16.765s] collect2: error: ld returned 1 exit status
+[16.766s] gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:175: sbus_node] Error 1
+[16.767s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
+[16.767s] gmake: *** [Makefile:146: all] Error 2
+[16.774s] Invoked command in '/home/omer/Desktop/deneme_ws/build/sbus' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/omer/Desktop/deneme_ws/build/sbus -- -j8 -l8

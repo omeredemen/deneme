@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target sbus_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus.cpp.o[0m
+[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:[m[K In member function ‘[01m[Kvoid sbus_node::getJoyMsg(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:212:9:[m[K [01;31m[Kerror: [m[Klvalue required as left operand of assignment
+  212 |         [01;31m[K-joystick[6][m[K  = joy_msg->axes[6];  //Bu iki eksen yön tuşlarıdır.
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:76: CMakeFiles/sbus_node.dir/src/sbus.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

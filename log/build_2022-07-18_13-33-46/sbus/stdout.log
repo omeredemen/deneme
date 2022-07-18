@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target sbus_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus.cpp.o[0m
+[100%] [32m[1mLinking CXX executable sbus_node[0m

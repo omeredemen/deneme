@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target sbus_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus.cpp.o[0m
+[100%] [32m[1mLinking CXX executable sbus_node[0m
+/usr/bin/ld: CMakeFiles/sbus_node.dir/src/sbus.cpp.o: in function `__static_initialization_and_destruction_0(int, int)':
+sbus.cpp:(.text+0x859): undefined reference to `SBUS::SBusSerialPort::SBusSerialPort()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:175: sbus_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
