@@ -234,6 +234,30 @@ src/sbus.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sbus_node.dir/build.make CMakeFiles/sbus_node.dir/src/sbus.cpp.s
 .PHONY : src/sbus.cpp.s
 
+src/sbus_node.o: src/sbus_node.cpp.o
+.PHONY : src/sbus_node.o
+
+# target to build an object file
+src/sbus_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sbus_node.dir/build.make CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o
+.PHONY : src/sbus_node.cpp.o
+
+src/sbus_node.i: src/sbus_node.cpp.i
+.PHONY : src/sbus_node.i
+
+# target to preprocess a source file
+src/sbus_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sbus_node.dir/build.make CMakeFiles/sbus_node.dir/src/sbus_node.cpp.i
+.PHONY : src/sbus_node.cpp.i
+
+src/sbus_node.s: src/sbus_node.cpp.s
+.PHONY : src/sbus_node.s
+
+# target to generate assembly for a file
+src/sbus_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sbus_node.dir/build.make CMakeFiles/sbus_node.dir/src/sbus_node.cpp.s
+.PHONY : src/sbus_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -253,6 +277,9 @@ help:
 	@echo "... src/sbus.o"
 	@echo "... src/sbus.i"
 	@echo "... src/sbus.s"
+	@echo "... src/sbus_node.o"
+	@echo "... src/sbus_node.i"
+	@echo "... src/sbus_node.s"
 .PHONY : help
 
 

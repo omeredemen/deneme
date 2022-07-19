@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sbus_node.dir/src/sbus.cpp.o"
   "CMakeFiles/sbus_node.dir/src/sbus.cpp.o.d"
+  "CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o"
+  "CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o.d"
   "sbus_node"
   "sbus_node.pdb"
 )

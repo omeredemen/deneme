@@ -1,0 +1,180 @@
+[0.000000] (-) TimerEvent: {}
+[0.001165] (sbus) JobQueued: {'identifier': 'sbus', 'dependencies': OrderedDict()}
+[0.018391] (sbus) JobStarted: {'identifier': 'sbus'}
+[0.099828] (-) TimerEvent: {}
+[0.112439] (sbus) JobProgress: {'identifier': 'sbus', 'progress': 'cmake'}
+[0.172264] (sbus) JobProgress: {'identifier': 'sbus', 'progress': 'build'}
+[0.175418] (sbus) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/omer/Desktop/deneme_ws/build/sbus', '--', '-j8', '-l8'], 'cwd': '/home/omer/Desktop/deneme_ws/build/sbus', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'omer'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/omer'), ('OLDPWD', '/home/omer/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '1236'), ('SYSTEMD_EXEC_PID', '1469'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8848'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/omer/Desktop/deneme_ws/install:/home/omer/Desktop/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'omer'), ('JOURNAL_STREAM', '8:21404'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'omer'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/edemen:@/tmp/.ICE-unix/1440,unix/edemen:/tmp/.ICE-unix/1440'), ('INVOCATION_ID', '5cce8f7780c3434993e74b3fb4da630a'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.205AP1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/omer/Desktop/dev_ws/install/publisher_package:/home/omer/Desktop/dev_ws/install/my_turtlesim:/home/omer/Desktop/deneme_ws/install/sbus:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:a600811c-92bf-48a7-9e2c-2e6f6a8e1b92'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/omer/Desktop/deneme_ws/build/sbus'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/omer/Desktop/dev_ws/install/publisher_package:/home/omer/Desktop/dev_ws/install/my_turtlesim:/home/omer/Desktop/deneme_ws/install/sbus:/opt/ros/humble')]), 'shell': False}
+[0.220097] (-) TimerEvent: {}
+[0.320967] (-) TimerEvent: {}
+[0.421359] (-) TimerEvent: {}
+[0.522338] (-) TimerEvent: {}
+[0.623234] (-) TimerEvent: {}
+[0.669637] (sbus) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.723408] (-) TimerEvent: {}
+[0.824044] (-) TimerEvent: {}
+[0.924396] (-) TimerEvent: {}
+[1.024732] (-) TimerEvent: {}
+[1.125146] (-) TimerEvent: {}
+[1.226005] (-) TimerEvent: {}
+[1.238975] (sbus) StdoutLine: {'line': b'-- Found rclcpp: 16.0.1 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.326360] (-) TimerEvent: {}
+[1.426935] (-) TimerEvent: {}
+[1.451027] (sbus) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.455185] (sbus) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.476820] (sbus) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.527169] (-) TimerEvent: {}
+[1.533944] (sbus) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.596963] (sbus) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.627260] (-) TimerEvent: {}
+[1.716732] (sbus) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.0 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.727428] (-) TimerEvent: {}
+[1.735010] (sbus) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.1 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.827562] (-) TimerEvent: {}
+[1.927936] (-) TimerEvent: {}
+[2.028482] (-) TimerEvent: {}
+[2.089323] (sbus) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.128669] (-) TimerEvent: {}
+[2.229097] (-) TimerEvent: {}
+[2.329217] (sbus) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.2 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.329410] (-) TimerEvent: {}
+[2.429685] (-) TimerEvent: {}
+[2.529996] (-) TimerEvent: {}
+[2.586743] (sbus) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.630116] (-) TimerEvent: {}
+[2.724994] (sbus) StdoutLine: {'line': b'-- Generating done\n'}
+[2.729386] (sbus) StdoutLine: {'line': b'-- Build files have been written to: /home/omer/Desktop/deneme_ws/build/sbus\n'}
+[2.730179] (-) TimerEvent: {}
+[2.778510] (sbus) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sbus_node\x1b[0m\n'}
+[2.803329] (sbus) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o\x1b[0m\n'}
+[2.830529] (-) TimerEvent: {}
+[2.931172] (-) TimerEvent: {}
+[3.031862] (-) TimerEvent: {}
+[3.132380] (-) TimerEvent: {}
+[3.232987] (-) TimerEvent: {}
+[3.333380] (-) TimerEvent: {}
+[3.434425] (-) TimerEvent: {}
+[3.535215] (-) TimerEvent: {}
+[3.635591] (-) TimerEvent: {}
+[3.736105] (-) TimerEvent: {}
+[3.836863] (-) TimerEvent: {}
+[3.937632] (-) TimerEvent: {}
+[4.038242] (-) TimerEvent: {}
+[4.138715] (-) TimerEvent: {}
+[4.239058] (-) TimerEvent: {}
+[4.339374] (-) TimerEvent: {}
+[4.439714] (-) TimerEvent: {}
+[4.540334] (-) TimerEvent: {}
+[4.640667] (-) TimerEvent: {}
+[4.741009] (-) TimerEvent: {}
+[4.841350] (-) TimerEvent: {}
+[4.941738] (-) TimerEvent: {}
+[5.042096] (-) TimerEvent: {}
+[5.142448] (-) TimerEvent: {}
+[5.242785] (-) TimerEvent: {}
+[5.343135] (-) TimerEvent: {}
+[5.443495] (-) TimerEvent: {}
+[5.543836] (-) TimerEvent: {}
+[5.644157] (-) TimerEvent: {}
+[5.744707] (-) TimerEvent: {}
+[5.845102] (-) TimerEvent: {}
+[5.945403] (-) TimerEvent: {}
+[6.045709] (-) TimerEvent: {}
+[6.145999] (-) TimerEvent: {}
+[6.246291] (-) TimerEvent: {}
+[6.346624] (-) TimerEvent: {}
+[6.446967] (-) TimerEvent: {}
+[6.547258] (-) TimerEvent: {}
+[6.647586] (-) TimerEvent: {}
+[6.747926] (-) TimerEvent: {}
+[6.848273] (-) TimerEvent: {}
+[6.948615] (-) TimerEvent: {}
+[7.048974] (-) TimerEvent: {}
+[7.149355] (-) TimerEvent: {}
+[7.249689] (-) TimerEvent: {}
+[7.350096] (-) TimerEvent: {}
+[7.450496] (-) TimerEvent: {}
+[7.550890] (-) TimerEvent: {}
+[7.651291] (-) TimerEvent: {}
+[7.751694] (-) TimerEvent: {}
+[7.852166] (-) TimerEvent: {}
+[7.952600] (-) TimerEvent: {}
+[8.053003] (-) TimerEvent: {}
+[8.153404] (-) TimerEvent: {}
+[8.253826] (-) TimerEvent: {}
+[8.354249] (-) TimerEvent: {}
+[8.454641] (-) TimerEvent: {}
+[8.555006] (-) TimerEvent: {}
+[8.655355] (-) TimerEvent: {}
+[8.755706] (-) TimerEvent: {}
+[8.855999] (-) TimerEvent: {}
+[8.956338] (-) TimerEvent: {}
+[9.056715] (-) TimerEvent: {}
+[9.157075] (-) TimerEvent: {}
+[9.257435] (-) TimerEvent: {}
+[9.357746] (-) TimerEvent: {}
+[9.458427] (-) TimerEvent: {}
+[9.558891] (-) TimerEvent: {}
+[9.659268] (-) TimerEvent: {}
+[9.759977] (-) TimerEvent: {}
+[9.860260] (-) TimerEvent: {}
+[9.960600] (-) TimerEvent: {}
+[10.060937] (-) TimerEvent: {}
+[10.161271] (-) TimerEvent: {}
+[10.261608] (-) TimerEvent: {}
+[10.361936] (-) TimerEvent: {}
+[10.462273] (-) TimerEvent: {}
+[10.562611] (-) TimerEvent: {}
+[10.662951] (-) TimerEvent: {}
+[10.763283] (-) TimerEvent: {}
+[10.863613] (-) TimerEvent: {}
+[10.963975] (-) TimerEvent: {}
+[11.064316] (-) TimerEvent: {}
+[11.164652] (-) TimerEvent: {}
+[11.264998] (-) TimerEvent: {}
+[11.365330] (-) TimerEvent: {}
+[11.465676] (-) TimerEvent: {}
+[11.566016] (-) TimerEvent: {}
+[11.666354] (-) TimerEvent: {}
+[11.766689] (-) TimerEvent: {}
+[11.867017] (-) TimerEvent: {}
+[11.967353] (-) TimerEvent: {}
+[12.067937] (-) TimerEvent: {}
+[12.168554] (-) TimerEvent: {}
+[12.269509] (-) TimerEvent: {}
+[12.369812] (-) TimerEvent: {}
+[12.470170] (-) TimerEvent: {}
+[12.570532] (-) TimerEvent: {}
+[12.670904] (-) TimerEvent: {}
+[12.771274] (-) TimerEvent: {}
+[12.835346] (sbus) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable sbus_node\x1b[0m\n'}
+[12.871630] (-) TimerEvent: {}
+[12.972002] (-) TimerEvent: {}
+[13.072794] (-) TimerEvent: {}
+[13.173233] (-) TimerEvent: {}
+[13.273988] (-) TimerEvent: {}
+[13.374708] (-) TimerEvent: {}
+[13.475367] (-) TimerEvent: {}
+[13.576200] (-) TimerEvent: {}
+[13.676869] (-) TimerEvent: {}
+[13.777574] (-) TimerEvent: {}
+[13.878280] (-) TimerEvent: {}
+[13.978838] (-) TimerEvent: {}
+[14.079343] (-) TimerEvent: {}
+[14.180190] (-) TimerEvent: {}
+[14.280564] (-) TimerEvent: {}
+[14.345136] (sbus) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o: in function `main':\n"}
+[14.345336] (sbus) StderrLine: {'line': b"sbus_node.cpp:(.text+0xa0): undefined reference to `SBUS::SBusSerialPort::connectSerialPort()'\n"}
+[14.346387] (sbus) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o: in function `sbus_node::sendSbusMsg()':\n"}
+[14.346518] (sbus) StderrLine: {'line': b"sbus_node.cpp:(.text._ZN9sbus_node11sendSbusMsgEv[_ZN9sbus_node11sendSbusMsgEv]+0x43): undefined reference to `SBUS::SBusSerialPort::transmitSerialSBusMessage(int*) const'\n"}
+[14.380691] (-) TimerEvent: {}
+[14.386622] (sbus) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[14.387712] (sbus) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:175: sbus_node] Error 1\n'}
+[14.387949] (sbus) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2\n'}
+[14.388147] (sbus) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[14.390142] (sbus) CommandEnded: {'returncode': 2}
+[14.480978] (-) TimerEvent: {}
+[14.581754] (-) TimerEvent: {}
+[14.682636] (-) TimerEvent: {}
+[14.734772] (sbus) JobEnded: {'identifier': 'sbus', 'rc': 2}
+[14.746912] (-) EventReactorShutdown: {}

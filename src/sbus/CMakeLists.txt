@@ -10,7 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs)
 
-add_executable(sbus_node src/sbus.cpp)
+add_executable(sbus_node src/sbus_node.cpp src/sbus.cpp)
 ament_target_dependencies(sbus_node rclcpp sensor_msgs)
 target_include_directories(sbus_node
     PUBLIC
