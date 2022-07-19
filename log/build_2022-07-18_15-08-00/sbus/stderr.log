@@ -1,8 +1,0 @@
-/usr/bin/ld: CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o: in function `main':
-sbus_node.cpp:(.text+0xa0): undefined reference to `SBUS::SBusSerialPort::connectSerialPort()'
-/usr/bin/ld: CMakeFiles/sbus_node.dir/src/sbus_node.cpp.o: in function `SBUS::sbus_node::sendSbusMsg()':
-sbus_node.cpp:(.text._ZN4SBUS9sbus_node11sendSbusMsgEv[_ZN4SBUS9sbus_node11sendSbusMsgEv]+0x4a): undefined reference to `SBUS::SBusSerialPort::transmitSerialSBusMessage(int*) const'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:175: sbus_node] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

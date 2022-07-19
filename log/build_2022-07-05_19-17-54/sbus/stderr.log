@@ -1,7 +1,0 @@
-[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:[m[K In constructor ‘[01m[Ksbus_node::sbus_node()[m[K’:
-[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:189:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kpub_[m[K’
-  189 |         [01;31m[Kpub_[m[K = this->create_subscription<sensor_msgs::msg::Joy>("joy", 10,
-      |         [01;31m[K^~~~[m[K
-gmake[2]: *** [CMakeFiles/sbus_node.dir/build.make:76: CMakeFiles/sbus_node.dir/src/sbus.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sbus_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

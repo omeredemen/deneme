@@ -1,4 +1,0 @@
-[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:[m[K In member function ‘[01m[Kvoid sbus_node::callBack(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/omer/Desktop/deneme_ws/src/sbus/src/sbus.cpp:220:68:[m[K [01;35m[Kwarning: [m[Kdivision by zero [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdiv-by-zero-Wdiv-by-zero]8;;[m[K]
-  220 |                 sbus.channels[j] = min_button +([01;35m[K(max_sbus-min_sbus)/(max_button-max_button)[m[K) * (x[j]-min_button);
-      |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
