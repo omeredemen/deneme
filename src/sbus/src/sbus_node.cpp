@@ -2,7 +2,10 @@
 yayınlamıyor.Sadece joystickten alınan mesajları SBUS 
 mesajı halinde serial port üzerinden FC'a gönderiyor.
 İleride sbus mesajlarını yayınlamak istediğimizde 
-.msg dosyası oluşturmamız gerekecek.*/
+.msg dosyası oluşturmamız gerekecek.
+
+Herhangi bir parametresi de bulunmuyor ileride parametreleri
+program dışında da değiştirebilmemizi için eklenenilir.*/
 
 #include "rclcpp/rclcpp.hpp" 
 #include "sensor_msgs/msg/joy.hpp" 
